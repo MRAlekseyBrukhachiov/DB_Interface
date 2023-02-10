@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_db_interface.EditBookController">
+    <children>
+        <AnchorPane layoutY="92.0" prefHeight="507.0" prefWidth="600.0" style="-fx-background-color: #fafafa;">
+            <children>
+                <TextField fx:id="addBookTitle" layoutX="21.0" layoutY="35.0" prefHeight="26.0" prefWidth="258.0" promptText="Название">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="addBookAuthorId" layoutX="321.0" layoutY="35.0" prefHeight="26.0" prefWidth="258.0" promptText="Автор (Фамилия И.О.)">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </TextField>
+                <Button fx:id="clearButton" layoutX="369.0" layoutY="412.0" mnemonicParsing="false" onMouseClicked="#clear" prefHeight="43.0" prefWidth="161.0" style="-fx-background-color: #f39c63;" text="Очистить" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                    </font>
+                </Button>
+                <TextField fx:id="addBookLanguage" layoutX="21.0" layoutY="208.0" prefHeight="26.0" prefWidth="258.0" promptText="Язык">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="addBookCount" layoutX="21.0" layoutY="94.0" prefHeight="26.0" prefWidth="258.0" promptText="Количество">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="addBookWeight" layoutX="21.0" layoutY="151.0" prefHeight="26.0" prefWidth="258.0" promptText="Вес (г)">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="addBookGenreId" layoutX="321.0" layoutY="94.0" prefHeight="26.0" prefWidth="258.0" promptText="Жанр">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </TextField>
+                <Button fx:id="saveButton" layoutX="69.0" layoutY="412.0" mnemonicParsing="false" onMouseClicked="#save" prefHeight="43.0" prefWidth="161.0" style="-fx-background-color: #3CB371;" text="Сохранить" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                    </font>
+                </Button>
+            <ComboBox fx:id="formatSelection" layoutX="416.0" layoutY="150.0" prefHeight="38.0" prefWidth="162.0" promptText="Формат" />
+            <ComboBox fx:id="coverSelection" layoutX="416.0" layoutY="207.0" prefHeight="38.0" prefWidth="162.0" promptText="Обложка" />
+            <ComboBox fx:id="paperSelection" layoutX="416.0" layoutY="263.0" prefHeight="38.0" prefWidth="162.0" promptText="Бумага" />
+            <Label layoutX="328.0" layoutY="154.0" prefHeight="30.0" prefWidth="63.0" text="Формат">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="328.0" layoutY="211.0" prefHeight="30.0" prefWidth="76.0" text="Обложка">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="328.0" layoutY="267.0" prefHeight="30.0" prefWidth="76.0" text="Бумага">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+        <Label layoutX="114.0" layoutY="14.0" text="Publishing" textFill="WHITE">
+            <font>
+                <Font name="Gill Sans Ultra Bold" size="56.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
